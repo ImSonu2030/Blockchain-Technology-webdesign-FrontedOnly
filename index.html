@@ -25,6 +25,15 @@
 <body>
 
     <!-- Section 1-->
+    <div id="mb-nav">
+        <ul>
+            <li class="closeBtn"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li class="animate__animated animate__zoomInDown animate__slow"><a href="index.html">Home</a></li>
+            <li class="animate__animated animate__zoomInDown animate__slow"><a href="service.html">Service</a></li>
+            <li class="animate__animated animate__zoomInDown animate__slow"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    
     <div class="homePage">
         <header>
             <nav class="row">
@@ -38,13 +47,16 @@
                         <li class="animate__animated animate__zoomInDown animate__slow"><a href="about.html">About</a></li>
                     </ul>
                 </div>
+                <div class="mobileMenu">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
             </nav>
         </header>
 
         <div class="basic_container">
             <div class="video-section">
                 <span></span>
-                <video src="./videos/Blockchain - 43608.mp4" width="100%" height="100%" autoplay muted loop></video>
+                <video src="./videos/Blockchain - 43608.mp4" autoplay muted loop></video>
             </div>
             <div class="left-col animate__animated animate__fadeInLeft">
                 <h1>Trade and Invest in Crypto</h1>
@@ -59,11 +71,11 @@
 
     
     <!-- Section 2-->
-    <div class="latest-price" data-aos="fade-up">
+    <div class="latest-price">
         <div class="coin fade myFadeLeft">
             <a href="https://in.tradingview.com/symbols/BTCUSD/"><img src="./img_espEvent/bitcoin.png" alt="Bitcoin"></a>
             <div>
-                <h3>$ <span id="bitcoin"></span></h3>
+                <h3>$<span id="bitcoin"></span></h3>
                 <p>Bitcoin</p>
             </div>
         </div>
@@ -118,7 +130,7 @@
             </div>
         </div>
         <div class="col-2 fade myFadeUp">
-            <img src="./img_espEvent/portfolio-display.svg" width="100" alt="">
+            <img src="./img_espEvent/portfolio-display.svg" alt="">
         </div>
     </div>
 
@@ -364,6 +376,14 @@
             $(window).on('scroll', function () {
                 checkElementLocation();
             });
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mb-nav").style.opacity = "1";
+        }
+        function closeNav() {
+            document.getElementById("mb-nav").style.opacity = "0";
+        }
     </script>
 
 </body>

@@ -1,0 +1,201 @@
+
+@media screen and (max-width:1100px) {
+    .latest-price {
+        margin: auto;
+    }
+    .feature_content {
+        column-gap: 50px;
+    }
+    .feature_content .feature_card {
+        width: fit-content;
+    }
+}
+@media screen and (max-width:995px) {
+    .why-section {
+        margin: 5%;
+    }
+    .why-section .col-1 {
+        font-size: small;
+        width: 50%;
+        row-gap: 15px;
+    }
+    .content-row .title {
+        column-gap: 5px;;
+    }
+    .why-section .col-2 {
+        width: 50%;
+    }
+    .why-section .col-2 img{
+        width: 70%;
+    }
+    .feature-section-1, .feature-section-2 {
+        margin: 5%;
+    }
+    .feature_content {column-gap: 30px;}
+    .feature_content .col {
+        padding: 10px 5px;
+        line-height: 25px;
+    }
+    .feature_content .col img {
+        width: auto;
+    }
+}
+@media screen and (max-width:950px) {
+    .profile_card {
+        width: 200px;
+        height: 230px;
+    }
+    .imgBox {
+        width: 130px;
+        height: 130px;
+    }
+    .profile_card:hover .imgBox{
+        top: 30%;
+        width: 150px;
+        height: 150px;
+    }
+    .head h3 {font-size: 1em;}
+    .head h5 {font-size: 0.8em;}
+    .container {
+        column-gap: 100px;
+        margin: 0 100px;
+    }
+}
+@media screen and (max-width:920px) {
+    /*=============Dropdown====================*/
+    .mobileMenu {
+        position: absolute;
+        display: block;
+        right: 10%;
+    }
+    .nav_bar {
+        display: none;
+    }
+    /*=========================================*/
+    .latest-price{
+        column-gap: 30px;
+        margin:auto;
+    }
+    .coin{
+        column-gap: 5px;
+        font-size: 0.8em; 
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .coin img{
+        width: 50px;
+        margin-right: 10px;
+    }
+        
+    .left-col {
+        width: 40%;
+        margin-left: 5%;
+        row-gap: 15px;
+    }
+    .left-col h1 {
+        font-size: 1.2em;
+    }
+    .left-col p {
+        font-size: 0.7em;
+    }
+    .regBtn {
+        width: fit-content;
+        font-size: 0.9em;
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .about_section .team {
+        display: flex;
+        padding: 25px 0;
+    }
+    .profile_card {
+        width: 200px;
+        height: 230px;
+    }
+    .imgBox {
+        top: 30%;
+        width: 150px;
+        height: 150px;
+        border-radius: 0;
+    }
+    .head h3 {
+        font-size: 0.8em;
+        top: 60%;
+        left: 20%;
+        transform: translateX(-30px);
+        padding: 6px 10px;
+        border-radius: 5px;
+    }
+    .head h5 {
+        font-size: 0.7em;
+        top: 70%;
+        opacity: 1;
+    }
+    .about_section {
+        margin: 30px 10px;
+    }
+    .social_links {
+        left: 0;
+        opacity: 1;
+    }
+}
+@media screen and (max-width:700px) {
+    .latest-price{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .coin{
+        width: 30%;
+        font-size: 0.8em; 
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .regBtn {
+        width: fit-content;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+    .why-section .col-1{
+        width: 100%;
+    }
+    .why-section .col-2 {
+        display: none;
+    }
+    .feature-section-1, .feature-section-2 {
+        margin: 5% auto;
+    }
+    .feature_content {
+        grid-template-columns: 70%;
+        row-gap: 50px;
+    }
+    .about_section .team {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+        column-gap: 0;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    .footer-col ul li a{
+        color: #ffffff;
+    }
+    .container .footer-col:last-child {
+        margin-top: 80px;
+    }
+    
+    
+    
+}
