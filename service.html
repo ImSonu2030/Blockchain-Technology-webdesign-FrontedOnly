@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img_espEvent/logo1.png">
+    <link rel="icon" type="image/x-icon" href="./images/logo1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://icons8.com/icon/118468/facebook">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate_style.css">
+    <link rel="stylesheet" href="respSheet.css">
+    <script src="page.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>CryptoMine</title>
@@ -25,7 +26,7 @@
     <div class="homePage">
         <header>
             <nav class="row">
-                <div class="logo col-1"><a href="index.html"><img src="./img_espEvent/logo1.png" width="50" alt=""></a>
+                <div class="logo col-1"><a href="index.html"><img src="./images/logo1.png" width="50" alt=""></a>
                     Crypto<span>Snap</span>
                 </div>
                 <div class="nav_bar col-2">
@@ -40,11 +41,11 @@
     </div>
 
     <div class="feature-section-1">
-        <h1>Our Specialities</h1>
-        <h4>We Provide the Best Solution</h4>
-        <div class="feature_content">
+        <h1 class="fade myFadeLeft">Our Specialities</h1>
+        <h4 class="fade myFadeRight">We Provide the Best Solution</h4>
+        <div class="feature_content fade myFadeUp">
             <div class="col">
-                <img src="./img_espEvent/feature-1.svg" alt="">
+                <img src="./images/feature-1.svg" alt="">
                 <div class="desc">
                     <h3>Buy Your Crypto</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <div class="col">
-                <img src="./img_espEvent/feature-2.svg" alt="">
+                <img src="./images/feature-2.svg" alt="">
                 <div class="desc">
                     <h3>Sell Instantly</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut
@@ -60,7 +61,7 @@
                 </div>
             </div>
             <div class="col">
-                <img src="./img_espEvent/feature-3.svg" alt="">
+                <img src="./images/feature-3.svg" alt="">
                 <div class="desc">
                     <h3>Invest for Longterm</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut
@@ -69,12 +70,15 @@
             </div>
         </div>
     </div>
+
+    
+    <!-- Section 5-->
     <div class="feature-section-2">
-        <h1>Our Awesome Features</h1>
-        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
+        <h1 class="fade myFadeRight">Our Awesome Features</h1>
+        <h4 class="fade myFadeLeft">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
         </h4>
         <div class="feature_content">
-            <div class="feature_card">
+            <div class="feature_card fade myFadeLeft">
                 <span class="material-icons">account_balance_wallet</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -82,7 +86,7 @@
                     <p>Lorem ipsum dolor sit aconsetetur sadipscing elitr, sed dianonumy invidunt ut labore </p>
                 </div>
             </div>
-            <div class="feature_card">
+            <div class="feature_card fade myFadeUp">
                 <span class="material-icons">notifications_active</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -90,7 +94,7 @@
                     <p>Lorem ipsum dolor sit aconsetetur sadipscing elitr, sed dianonumy invidunt ut labore </p>
                 </div>
             </div>
-            <div class="feature_card">
+            <div class="feature_card fade myFadeRight">
                 <span class="material-icons">currency_exchange</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -98,7 +102,7 @@
                     <p>Lorem ipsum dolor sit aconsetetur sadipscing elitr, sed dianonumy invidunt ut labore </p>
                 </div>
             </div>
-            <div class="feature_card">
+            <div class="feature_card fade myFadeLeft">
                 <span class="material-icons">settings</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -106,7 +110,7 @@
                     <p>Lorem ipsum dolor sit aconsetetur sadipscing elitr, sed dianonumy invidunt ut labore </p>
                 </div>
             </div>
-            <div class="feature_card">
+            <div class="feature_card fade myFadeUp">
                 <span class="material-icons"> assured_workload</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -114,7 +118,7 @@
                     <p>Lorem ipsum dolor sit aconsetetur sadipscing elitr, sed dianonumy invidunt ut labore </p>
                 </div>
             </div>
-            <div class="feature_card">
+            <div class="feature_card fade myFadeRight">
                 <span class="material-icons">speed</span>
                 <!-- notifications_active  currency_exchange  settings assured_workload  speed-->
                 <div class="desc">
@@ -147,7 +151,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <div class="logo footer-logo"><a href="index.html"><img src="./img_espEvent/logo1.png" width="50" alt=""></a>
+                    <div class="logo footer-logo"><a href="index.html"><img src="./images/logo1.png" width="50" alt=""></a>
                         Crypto<span>Snap</span>
                     </div>
                     <div style="opacity: 1;" class="footer-slink social_links">
@@ -178,6 +182,44 @@
         </div>
     </footer>
 
+    <script>
+        function checkElementLocation() {
+                var $window = $(window);
+                var bottom_of_window = $window.scrollTop() + $window.height();
+
+                $('.myFadeRight').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Right');
+                    }
+                });
+
+                $('.myFadeUp').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Up');
+                    }
+                });
+
+                $('.myFadeLeft').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Left');
+                    }
+                });
+            }
+
+            checkElementLocation();
+            $(window).on('scroll', function () {
+                checkElementLocation();
+            });
+    </script>
 
     
 </body>

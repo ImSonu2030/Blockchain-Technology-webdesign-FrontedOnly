@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img_espEvent/logo1.png">
+    <link rel="icon" type="image/x-icon" href="./images/logo1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
     <div class="homePage">
         <header>
             <nav class="row">
-                <div class="logo col-1"><a href="index.html"><img src="./img_espEvent/logo1.png" width="50" alt=""></a>
+                <div class="logo col-1"><a href="index.html"><img src="./images/logo1.png" width="50" alt=""></a>
                     Crypto<span>Snap</span>
                 </div>
                 <div class="nav_bar col-2">
@@ -40,13 +40,13 @@
     </div>
 
     <div class="about_section">
-        <h1>About</h1>
-        <h4>Our Team Members</h4>
+        <h1 class="fade myFadeUp">About</h1>
+        <h4 class="fade myFadeLeft">Our Team Members</h4>
         <div class="team">
-            <div class="profile_card">
+            <div class="profile_card fade myFadeRight">
                 <span class="lowerBlanket"></span>
                 <div class="imgBox">
-                    <img src="./img_espEvent/team-1.png" width="100" alt="Image">
+                    <img src="./images/team-1.png" width="100" alt="Image">
                 </div>
                 <div class="head">
                     <h3>Ellen Watson</h3>
@@ -58,10 +58,10 @@
                     <img src="https://img.icons8.com/ios/50/000000/twitter--v1.png" />
                 </div>
             </div>
-            <div class="profile_card">
+            <div class="profile_card fade myFadeRight">
                 <span class="lowerBlanket"></span>
                 <div class="imgBox">
-                    <img src="./img_espEvent/profile_img4.png" width="100" alt="Image">
+                    <img src="./images/profile_img4.png" width="100" alt="Image">
                 </div>
                 <div class="head">
                     <h3>Ellen Watson</h3>
@@ -73,10 +73,10 @@
                     <img src="https://img.icons8.com/ios/50/000000/twitter--v1.png" />
                 </div>
             </div>
-            <div class="profile_card">
+            <div class="profile_card fade myFadeRight">
                 <span class="lowerBlanket"></span>
                 <div class="imgBox">
-                    <img src="./img_espEvent/profile_img3.png" width="100" alt="Image">
+                    <img src="./images/profile_img3.png" width="100" alt="Image">
                 </div>
                 <div class="head">
                     <h3>Ellen Watson</h3>
@@ -91,10 +91,13 @@
         </div>
     </div>
 
-
+    
+    <!-- Section 7-->
     <footer class="footer">
+        <span class="bg_disc disc1"></span>
+        <span class="bg_disc disc2"></span>
         <div class="container">
-                <div class="footer-col">
+                <div class="footer-col fade myFadeLeft">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">about us</a></li>
@@ -103,7 +106,7 @@
                         <li><a href="#">Affliate Program</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col fade myFadeLeft">
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
@@ -113,7 +116,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <div class="logo footer-logo"><a href="index.html"><img src="./img_espEvent/logo1.png" width="50" alt=""></a>
+                    <div class="logo footer-logo"><a href="index.html"><img src="./images/logo1.png" width="50" alt=""></a>
                         Crypto<span>Snap</span>
                     </div>
                     <div style="opacity: 1;" class="footer-slink social_links">
@@ -144,6 +147,45 @@
         </div>
     </footer>
 
+    <script>
+        function checkElementLocation() {
+                var $window = $(window);
+                var bottom_of_window = $window.scrollTop() + $window.height();
+
+                $('.myFadeRight').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Right');
+                    }
+                });
+
+                $('.myFadeUp').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Up');
+                    }
+                });
+
+                $('.myFadeLeft').each(function (i) {
+                    var $that = $(this);
+                    var bottom_of_object = $that.position().top + $that.outerHeight();
+
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('fadeIn-Left');
+                    }
+                });
+            }
+
+            checkElementLocation();
+            $(window).on('scroll', function () {
+                checkElementLocation();
+            });
+    </script>
+    
 
     
 </body>
